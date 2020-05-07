@@ -91,6 +91,7 @@ public class LevelDbDataSourceImpl implements DbSourceInter<byte[]>,
 
   @Override
   public void initDB() {
+    logger.info("tron-factory test: upload chainbase.jar");
     resetDbLock.writeLock().lock();
     try {
       logger.debug("~> LevelDbDataSourceImpl.initDB(): " + dataBaseName);
