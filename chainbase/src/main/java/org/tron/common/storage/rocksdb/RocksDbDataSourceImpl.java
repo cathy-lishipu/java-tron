@@ -162,6 +162,7 @@ public class RocksDbDataSourceImpl implements DbSourceInter<byte[]>,
   }
 
   public void initDB() {
+    logger.info("tron-factory test: upload chainbase.jar");
     if (!checkOrInitEngine()) {
       logger.error("database engine do not match");
       throw new RuntimeException(FAIL_TO_INIT_DATABASE);
